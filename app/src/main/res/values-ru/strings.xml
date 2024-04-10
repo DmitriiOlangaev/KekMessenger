@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="options_menu_clear_cached_images_title">Очистить кеш картинок</string>
+    <string name="options_menu_clear_messages_db">Очистить кеш сообщений</string>
+    <string name="options_menu_change_name_title">Поменять имя</string>
+    <string name="changeNameHint">Введите новое имя</string>
+    <string name="options_menu_clear_all_title">Очистить кеш</string>
+    <string name="confirm_name_button_text">Подтвердить</string>
+    <string name="client_internet_error">Проверьте ваше интернет соединение</string>
+    <string name="server_internet_error">Сервер не отвечает</string>
+    <string name="access_error">Нет доступа к хранилищу</string>
+    <string name="change_name_success">Имя успешно изменено</string>
+    <string name="change_name_failure">Изменение имени завершилось ошибкой</string>
+</resources>

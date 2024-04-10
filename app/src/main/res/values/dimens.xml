@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="messageMetaDataTextViewHeight">15dp</dimen>
+    <dimen name="messageMetaDataTextSize">10dp</dimen>
+    <dimen name="channelNameSize">20dp</dimen>
+</resources>

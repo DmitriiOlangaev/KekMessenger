@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/clear_all"
+        android:title="@string/options_menu_clear_all_title" />
+
+    <item
+        android:id="@+id/clear_cached_images"
+        android:title="@string/options_menu_clear_cached_images_title" />
+
+    <item
+        android:id="@+id/clear_messages_db"
+        android:title="@string/options_menu_clear_messages_db" />
+
+    <item
+        android:id="@+id/change_name"
+        android:title="@string/options_menu_change_name_title" />
+
+</menu>

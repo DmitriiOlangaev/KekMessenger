@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.demo.kekmessenger.data.preferencesRepo";
+option java_multiple_files = true;
+
+message UserPreferences {
+  string name = 1;
+  Theme theme = 2;
+
+  enum Theme {
+    SYSTEM = 0;
+    DARK = 1;
+    LIGHT = 2;
+  }
+}

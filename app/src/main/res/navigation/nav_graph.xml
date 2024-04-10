@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chatsFragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.demo.kekmessenger.ui.activities.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/changeNameFragment"
+        android:name="com.demo.kekmessenger.ui.fragments.ChangeNameFragment"
+        android:label="fragment_change_name"
+        tools:layout="@layout/fragment_change_name" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.demo.kekmessenger.ui.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat">
+        <action
+            android:id="@+id/action_chatFragment_to_openImageFragment"
+            app:destination="@id/openImageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_chatFragment_to_confirmImageFragment2"
+            app:destination="@id/confirmImageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="channel"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.demo.kekmessenger.ui.fragments.ChatsFragment"
+        android:label="fragment_chats"
+        tools:layout="@layout/fragment_chats">
+        <action
+            android:id="@+id/action_chatsFragment_to_chatFragment"
+            app:destination="@id/chatFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_chatsFragment_to_changeNameFragment"
+            app:destination="@id/changeNameFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmImageFragment"
+        android:name="com.demo.kekmessenger.ui.fragments.ConfirmImageFragment"
+        android:label="fragment_confirm_image"
+        tools:layout="@layout/fragment_confirm_image">
+        <argument
+            android:name="ImageUri"
+            app:argType="android.net.Uri" />
+    </fragment>
+    <fragment
+        android:id="@+id/openImageFragment"
+        android:name="com.demo.kekmessenger.ui.fragments.OpenImageFragment"
+        android:label="fragment_open_image"
+        tools:layout="@layout/fragment_open_image">
+        <argument
+            android:name="key"
+            app:argType="string" />
+    </fragment>
+</navigation>

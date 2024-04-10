@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/senderNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/messageMetaDataTextViewHeight"
+        android:textSize="@dimen/messageMetaDataTextSize"
+        app:layout_constraintEnd_toStartOf="@+id/dateOfMessageTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dateOfMessageTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/messageMetaDataTextViewHeight"
+        android:textSize="@dimen/messageMetaDataTextSize"
+        app:layout_constraintEnd_toStartOf="@id/messageIdTextView"
+        app:layout_constraintStart_toEndOf="@id/senderNameTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/messageIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/messageMetaDataTextViewHeight"
+        android:textSize="@dimen/messageMetaDataTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dateOfMessageTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+</merge>

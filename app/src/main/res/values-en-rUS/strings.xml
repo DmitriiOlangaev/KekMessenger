@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="options_menu_clear_cached_images_title">Clear cached images</string>
+    <string name="options_menu_clear_messages_db">Clear messages db</string>
+    <string name="options_menu_change_name_title">Change name</string>
+    <string name="changeNameHint">Enter new name</string>
+    <string name="options_menu_clear_all_title">Clear all</string>
+    <string name="confirm_name_button_text">Confirm</string>
+    <string name="client_internet_error">Check your internet connection</string>
+    <string name="server_internet_error">Server doesn\'t respond</string>
+    <string name="access_error">Can\'t access storage</string>
+</resources>
